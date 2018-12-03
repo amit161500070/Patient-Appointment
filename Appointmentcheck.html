@@ -1,0 +1,442 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Medical</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">			
+			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+		  <header id="header">
+	  		<div class="header-top">
+	  			<div class="container">
+			  		<div class="row align-items-center">
+			  			<div class="col-lg-6 col-sm-6 col-4 header-top-left">
+			  				<a href="tel:+918630408259"><span class="lnr lnr-phone-handset"></span> <span class="text"><span class="text">+91 8630408259</span></span></a>
+				  			<a href="mailto:amit161500070@gmail.com"><span class="lnr lnr-envelope"></span> <span class="text"><span class="text">amit161500070@gmail.com</span></span></a>			
+			  			</div>
+			  			<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+							<a href="index.html#appointmentForm" class="primary-btn text-uppercase">Book Appointment</a>
+			  			</div>
+			  		</div>			  					
+	  			</div>
+			</div>
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="index.html">Home</a></li>
+			          <li><a href="about.html">About</a></li>
+			          
+			          <li class="menu-has-children"><a href="">Users</a>
+			            <ul>
+			              <li><a href="AssLogin.html">Doctor Login</a></li>
+			              <li><a href="AssLogin.html">Assistant Login</a></li>
+			            </ul>
+			          </li>	
+			          <!--<li class="menu-has-children"><a href="">Pages</a>
+			            <ul>
+			            	  <li><a href="elements.html">Elements</a></li>
+			            	  <li><a href="#">Item One</a></li>
+			            	  <li><a href="#">Item Two</a></li>
+					          <li class="menu-has-children"><a href="">Level 2 </a>
+					            <ul>
+					              <li><a href="#">Item One</a></li>
+					              <li><a href="#">Item Two</a></li>
+					            </ul>
+					          </li>					                		
+			            </ul>
+			          </li>	-->				        
+						
+						<li ><a href="Appointmentcheck.html#appointmentCheck">Appointment Status</a>
+			            
+			          </li>				          					          		        
+			          <li><a href="contact.html">Contact</a></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-8 col-md-12">
+							<h1>
+								We Care for Your Health
+								Every Moment		
+							</h1><br><br>
+							<!--<p class="pt-10 pb-10 text-white">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
+							</p>-->
+							<a href="#" class="primary-btn text-uppercase">Get Started</a>
+						</div>										
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->
+			
+			
+
+			<!-- Start appointment Area -->
+			<section class="appointment-area">			
+				<div class="container">
+					<div class="row justify-content-between align-items-center pb-120 appointment-wrap">
+						<div class="col-lg-5 col-md-6 appointment-left">
+						<br>
+							<h1>
+								Servicing Hours
+							</h1>
+							
+							<ul class="time-list">
+								<li class="d-flex justify-content-between">
+									<span>Monday-Friday</span>
+									<span>08.00 am - 10.00 pm</span>
+								</li>
+								<li class="d-flex justify-content-between">
+									<span>Saturday</span>
+									<span>08.00 am - 10.00 pm</span>
+								</li>
+								<li class="d-flex justify-content-between">
+									<span>Sunday</span>
+									<span>08.00 am - 10.00 pm</span>
+								</li>																
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 appointment-right pt-60 pb-60">
+						<div class="form-wrap" id="appointmentCheck">
+							
+								<h3 class="pb-20 text-center mb-30">Check Appointment Status</h3>		
+								<input type="text" class="form-control" id="pformname" name="name" placeholder="Patient Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient Name'" >
+								<input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" id="pformmob" onblur="this.placeholder = 'Phone'" >
+								<!--<input type="email" class="form-control" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" >
+								<input id="datepicker1" name="dop" class="dates form-control"  placeholder="Date of Birth" type="text">   
+								<div class="form-select" id="service-select">
+									<select>
+										<option data-display="">Disease Type</option>
+										<option value="1">Type One</option>
+										<option value="2">Type Two</option>
+										<option value="3">Type Three</option>
+										<option value="4">Type Four</option>
+									</select>
+								</div>	-->
+								
+								<button class="primary-btn text-uppercase" onclick="mystatus()" method="post" type="submit">Check Status</button>
+							
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End appointment Area -->
+
+			<!-- Start facilities Area -->
+			<section class="facilities-area section-gap">
+				<div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-70 col-lg-7">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">Our Facilities</h1>
+		                        <p>We provides our patients a world class facilities, and we always stand with them. Some facilities we provide are as follows-</p>
+		                    </div>
+		                </div>
+		            </div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="single-facilities">
+								<span class="lnr lnr-rocket"></span>
+								<a href="#"><h4>24/7 Emergency</h4></a>
+								<p>
+									Our hospital is known for providing advanced emergency services with rapid response for any kind of treatment. We have well-equipped emergency and trauma center with facilities of national standards.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-facilities">
+								<span class="lnr lnr-heart"></span>
+								<a href="#"><h4>Critical care medicine</h4></a>
+								<p>
+									Critical care medicine is a multi-professional specialty tasked with caring for acutely ill patients with life-threatening conditions involving multiple organs (e.g., lungs, heart, kidneys, brain)...
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-facilities">
+								<span class="lnr lnr-bug"></span>
+								<a href="#"><h4>Personal Health Checks</h4></a>
+								<p>
+									Health checks include talking to you about current health issues, asking about symptoms you may have, reviewing past medical problems , discussing significant family medical problems and reviewing general lifestyle issues like diet, exercise and smoking behaviour.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-facilities">
+								<span class="lnr lnr-users"></span>
+								<a href="#"><h4>Repeat Prescriptions</h4></a>
+								<p>
+									Repeat prescriptions can be provided for some stable, ongoing medical conditions.  This is at the discretion of your regular GP.  However, you will still need to have consultations regularly with your doctor and/or nurse to make sure that your condition is monitored within medical guidelines.
+								</p>
+							</div>
+						</div>																		
+					</div>
+				</div>	
+			</section>
+			<!-- End facilities Area -->
+			
+
+			<!-- Start offered-service Area -->
+			<section class="offered-service-area section-gap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-8 offered-left">
+							<h1 class="text-white">Our Offered Services</h1>
+							
+							<div class="service-wrap row">
+								<div class="col-lg-6 col-md-6">
+									<div class="single-service">
+										<div class="thumb">
+											<img class="img-fluid" src="img/xray.jpg" alt="">		
+										</div>
+										<a href="#">
+											<h4 class="text-white">Xray Facility</h4>
+										</a>	
+										<p>
+											Doctors on our hospital is equipped with an on-site Xray facility for general X-rays required for Immigration Medicals, accidents, employment medicals and pain management.
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<div class="single-service">
+										<div class="thumb">
+											<img class="img-fluid" src="img/s2.jpg" alt="">		
+										</div>
+										<a href="#">
+											<h4 class="text-white">Routine Checkup</h4>
+										</a>	
+										<p>
+											Routine health screenings are done to assess your general health and to look for signs of health problems. Your primary care doctor/general practitioner (GP) can ensure you are up to date with routine vaccinations and screening examinations.
+										</p>
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div>
+						</section>
+			<!-- End offered-service Area -->
+		
+			<!-- Start team Area -->
+		    <section class="team-area section-gap">
+		        <div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-70 col-lg-7">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">Our Consultants</h1>
+		                        <p>We have well educated Doctors, who have lot of experience in his/her field. </p>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="row justify-content-center d-flex align-items-center">
+		                <div class="col-lg-3 col-md-6 single-team">
+		                    <div class="thumb">
+		                       
+		                    </div>
+		                </div>
+		                <div class="col-lg-3 col-md-6 single-team">
+		                    <div class="thumb">
+		                        <img class="img-fluid" src="img/t2.jpg" alt="">
+		                        <div class="align-items-end justify-content-center d-flex">
+									<div class="social-links">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-behance"></i></a>
+									</div>			                        	
+		                            <p>
+		                            	inappropriate behavior
+		                            </p>
+		                            <h4>Andy Florence</h4>		                            
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="col-lg-3 col-md-6 single-team">
+		                    <div class="thumb">
+		                        <img class="img-fluid" src="img/t3.jpg" alt="">
+		                        <div class="align-items-end justify-content-center d-flex">
+									<div class="social-links">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-behance"></i></a>
+									</div>			                        	
+		                            <p>
+		                            	inappropriate behavior
+		                            </p>
+		                            <h4>Andy Florence</h4>		                            
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="col-lg-3 col-md-6 single-team">
+		                    <div class="thumb">
+		                        
+		                    </div>
+		                </div>		                		                		                
+		            </div>
+		        </div>
+		    </section>
+		    <!-- End team Area -->				
+						
+			<!-- Start feedback Area -->
+			<section class="feedback-area section-gap relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12 pb-60 header-text text-center">
+							<h1 class="mb-10 text-white">Enjoy our Client’s Feedback</h1>
+							<p class="text-white">
+								Who are in extremely love with eco friendly system..
+							</p>
+						</div>
+					</div>			
+					<div class="row feedback-contents justify-content-center align-items-center">
+					
+						
+						<div class="col-lg-6 feedback-right">
+							<div class="active-review-carusel">
+								<div class="single-feedback-carusel">
+									
+									<div class="title d-flex flex-row">
+										<h4 class="text-white pb-10">Amit Tiwari</h4>
+										<div class="star">
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>								
+										</div>										
+									</div>
+									<p class="text-white">
+										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									</p>
+								</div>
+								<div class="single-feedback-carusel">
+									
+									<div class="title d-flex flex-row">
+										<h4 class="text-white pb-10">Aditya Dixit</h4>
+										<div class="star">
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>								
+										</div>										
+									</div>
+									<p class="text-white">
+										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									</p>
+								</div>
+								<div class="single-feedback-carusel">
+									
+									<div class="title d-flex flex-row">
+										<h4 class="text-white pb-10">Amit Kumar</h4>
+										<div class="star">
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked	"></span>								
+										</div>										
+									</div>
+									<p class="text-white">
+										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									</p>
+								</div>																
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End feedback Area -->	
+
+		    
+
+			<!-- start footer Area -->		
+		<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<!--<div class="col-lg-2  col-md-6">
+							<div class="single-footer-widget">
+								<h6>Top Products</h6>
+								<ul class="footer-nav">
+									<li><a href="#">Managed Website</a></li>
+									<li><a href="#">Manage Reputation</a></li>
+									<li><a href="#">Power Tools</a></li>
+									<li><a href="#">Marketing Service</a></li>
+								</ul>
+							</div>
+						</div>-->
+						<div class="col-lg-4  col-md-6">
+							<div class="single-footer-widget mail-chimp">
+								<h6 class="mb-20">Contact Us</h6>
+								<p>
+									5/8, Krishna Nagar, Mathura, U.P., India
+								</p>
+								<h3>+91 8630408259</h3>
+								<h3>+91 9756245612</h3>
+							</div>
+						</div>							
+						
+			</footer>
+			<!-- End footer Area -->
+
+			<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+
+			<script src="./p.js"></script>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+ 			<script src="js/jquery-ui.js"></script>					
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+    		<script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>									
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+			
+		</body>
+	</html>
