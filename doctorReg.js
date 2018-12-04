@@ -17,14 +17,17 @@ function doctorLogin(){
 	var user=document.getElementById("doctor_username").value;
 	var password=document.getElementById("doctor_password").value;
 	
+	var phoneRGEX = /[789][0-9]{9}/;
 	
-	
-	
-	
-	db.collection("doctor")
+	if(phoneRGEX.test(user) && user.length==10){
+	db.collection("doctor").where("mobile","==",user).where("password","==",password)
     .get()
     .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
+		if(querySnapshot.empty){
+			alert("Please enter valid Details ");
+		}
+		else{
+			querySnapshot.forEach(function(doc) {
 				
 			
 			var mob=doc.data().mobile;
@@ -36,17 +39,30 @@ function doctorLogin(){
 			
 			if(mob==user && pass==password ){
 				
+				
 				var name=doc.data().Name;
 				localStorage.setItem( 'dname', name );
 			localStorage.setItem( 'dgender', gender );
 			localStorage.setItem( 'dmobile', mob );
 			
+			
+			
 				location.replace("index3.html");
-			}
+		}
+		
 			
 				
 	});
-	});
+		}
+	})
+	
+	.catch(function(error) {
+        alert("Please enter valid Details ");
+    });
+	}
+	else{
+		alert("Enter Valid Username");
+	}
 	
 	
 	
