@@ -23,7 +23,7 @@ window.onclick = function(event) {
   
     function myfun(){
     
-  var x=document.getElementById("name").value;
+  var x=document.getElementById("name").value.toLowerCase();
   var mob=document.getElementById("mob").value;
   var dat=document.getElementById("datepicker2").value;
   var d=new Date();
@@ -192,7 +192,7 @@ function myFunction(){
 	while(t1.rows.length > 0) {
 		t1.deleteRow(0);
 	}
-	var name=document.getElementById("search").value;
+	var name=document.getElementById("search").value.toLowerCase();
 	if(name==""){
 		alert("Enter Patient Name");
 	}
