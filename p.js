@@ -195,6 +195,7 @@ function myFunction(){
 	var name=document.getElementById("search").value.toLowerCase();
 	if(name==""){
 		alert("Enter Patient Name");
+		location.replace("AssistantDashboard.html");
 	}
 	var todayweek = getWeekNumber(new Date());
 	
