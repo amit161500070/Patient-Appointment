@@ -294,7 +294,7 @@ setTimeout(function() {
   var m=document.getElementById("pformmob").value;
   var phoneRGEX = /[789][0-9]{9}/;
 	
-	if(phoneRGEX.test(x) && x.length==10){
+	if(phoneRGEX.test(m) && m.length==10){
   localStorage.setItem( 'name', x );
   localStorage.setItem( 'mobile', m );
   window.location.replace("status.html");
@@ -322,7 +322,7 @@ setTimeout(function() {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
 				var date=doc.data().date.getDate();
-				var nm=doc.data().Name;
+				var nm=doc.data().Name.toLowerCase();
 				var mb=doc.data().Mobile;
 				var month=doc.data().date.getMonth();
 				month=month+1;
