@@ -22,10 +22,16 @@ function assistantLogin(){
 	
 	
 	
+	var phoneRGEX = /[789][0-9]{9}/;
 	
-	db.collection("users")
+	if(phoneRGEX.test(user) && user.length==10){
+	db.collection("users").where("mobile","==",user).where("password","==",password)
     .get()
     .then(function(querySnapshot) {
+		if(querySnapshot.empty){
+			alert("Please enter valid Details ");
+		}
+		else{
         querySnapshot.forEach(function(doc) {
 				
 			
@@ -47,9 +53,14 @@ function assistantLogin(){
 			
 				
 	});
-	});
-	
-	
+		}
+	}).catch(function(error) {
+        alert("Please enter valid Details ");
+    });
+	}
+	else{
+		alert("Enter Valid Username");
+	}
 	
 }
 
