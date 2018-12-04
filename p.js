@@ -290,11 +290,18 @@ setTimeout(function() {
   
   function mystatus(){
   
-  var x=document.getElementById("pformname").value;
+  var x=document.getElementById("pformname").value.toLowerCase();
   var m=document.getElementById("pformmob").value;
+  var phoneRGEX = /[789][0-9]{9}/;
+	
+	if(phoneRGEX.test(x) && x.length==10){
   localStorage.setItem( 'name', x );
   localStorage.setItem( 'mobile', m );
   window.location.replace("status.html");
+	}
+	else{
+		alert("Enter valid mobile number.");
+	}
   }
   
   
