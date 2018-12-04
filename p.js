@@ -432,7 +432,7 @@ db.collection("patient").add({
 	row.getElementsByTagName("td")[i].style.background = "#3AFF2D";
 	}
 	
-	row.getElementsByTagName("td")[3].innerHTML = "Success13"
+	row.getElementsByTagName("td")[3].innerHTML = "Success"
 	
     } 
 	
