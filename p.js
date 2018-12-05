@@ -44,7 +44,8 @@ db.collection("patient").add({
 	time: t,
 	Status: 0,
 	shift: sft,
-	date: dt
+	date: dt,
+	id: 0
 	
     
 })
@@ -365,7 +366,8 @@ db.collection("patient").add({
 	time: t,
 	Status: 0,
 	shift: sft,
-	date: t
+	date: t, 
+	id: 0
 	
     
 })
@@ -421,8 +423,8 @@ db.collection("patient").add({
 			
 		
 		db.collection("patient").doc(da).update({
-		Status: 1
-		
+		Status: 1,
+		id: id
     
 })
 
@@ -578,18 +580,21 @@ cdate.innerHTML=d.getDate()+"/"+mo+"/"+d.getFullYear();
 			if ( change.type === "modified") {
 				//var rowvalue = localStorage['valueupadte'];
 				addRowHandlers();
-				y.deleteRow(rowvalue);
+				
 				var sft=change.doc.data().shift;
+				var id=change.doc.data().id;
 				var status=change.doc.data().Status;
 				var date=change.doc.data().date.getDate();
 				var month=change.doc.data().date.getMonth();
 				var year=change.doc.data().date.getFullYear();
 				var tm=d.getHours();
-				var row123=y.insertRow(rowvalue);
-				row123.style.background = "#3AFF2D";
+				y.deleteRow(id);
+				
 				if(date==d.getDate() && month==d.getMonth() && year==d.getFullYear() && sft=="morning" && tm<=13 ){
 				if(status==1){
-				row123.innerHTML+="<tr style=background:#3AFF2D;><td>"+rowvalue+"</td><td>"+change.doc.data().Name+"</td><td>"+change.doc.data().Mobile+"</td><td>Success</td></tr>";
+					var row123=y.insertRow(id);
+					row123.style.background = "#3AFF2D";
+				row123.innerHTML+="<tr style=background:#3AFF2D;><td>"+id+"</td><td>"+change.doc.data().Name+"</td><td>"+change.doc.data().Mobile+"</td><td>Success</td></tr>";
 				
 					}
 					
@@ -598,10 +603,13 @@ cdate.innerHTML=d.getDate()+"/"+mo+"/"+d.getFullYear();
 				
 				if(date==d.getDate() && month==d.getMonth() && year==d.getFullYear() && sft=="evening" && tm>13 ){
 					if(status==1){
-				row123.innerHTML+="<tr style=background:#3AFF2D;><td>"+rowvalue+"</td><td>"+change.doc.data().Name+"</td><td>"+change.doc.data().Mobile+"</td><td>Success</td></tr>";
+						var row123=y.insertRow(id);
+				
+				row123.style.background = "#3AFF2D";
+				row123.innerHTML+="<tr style=background:#3AFF2D;><td>"+id+"</td><td>"+change.doc.data().Name+"</td><td>"+change.doc.data().Mobile+"</td><td>Success</td></tr>";
 				
 				
-				xmarq.innerHTML="<p>Current Patient: "+rowvalue+"</p>";
+				xmarq.innerHTML="<p>Current Patient: "+id+"</p>";
 
 					}
 					
