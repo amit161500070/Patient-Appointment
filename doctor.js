@@ -109,7 +109,8 @@ db.collection("patient").add({
 	time: t,
 	Status: 0,
 	shift: sft,
-	date: t
+	date: t,
+	id: 0
 	
     
 })
