@@ -25,7 +25,7 @@ function assistantLogin(){
 	var phoneRGEX = /[789][0-9]{9}/;
 	
 	if(phoneRGEX.test(user) && user.length==10){
-	db.collection("users").where("mobile","==",user).where("password","==",password)
+	db.collection("users").where("Mobile","==",user).where("password","==",password)
     .get()
     .then(function(querySnapshot) {
 		if(querySnapshot.empty){
@@ -35,7 +35,7 @@ function assistantLogin(){
         querySnapshot.forEach(function(doc) {
 				
 			
-			var mob=doc.data().mobile;
+			var mob=doc.data().Mobile;
 			var gender=doc.data().gender;
 				var name=doc.data().Name;
 			var pass=doc.data().password;
